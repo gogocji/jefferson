@@ -1,0 +1,21 @@
+{
+  "name": "core",
+  "version": "0.0.0",
+  "description": "the core of sdk",
+  "author": "gogocji <1329110070@qq.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "src/index.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "run-p build:rollup build:types",
+    "build:rollup": "rollup -c",
+    "build:types": "tsc -p tsconfig.types.json"
+  }
+}
